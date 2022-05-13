@@ -206,7 +206,7 @@ input:focus {
     
 }
 
-.boton1:hover {}
+
 
 .botonsubmitReset {
     display: flex;
@@ -342,10 +342,40 @@ input:focus {
     #ffcc66,#db5d36);
 }
 
+.descripciónTienda {
+    text-align: center;
+
+}
+
+
 .vinculoTienda {
     margin-top: 20px;
-    margin-left: 5px;
+    text-align: center;
+    
+    
 }
+
+.botonTienda {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-image: linear-gradient(to right, 
+    #ffcc66,#db5d36);
+    border-radius: 5px;
+    padding: 5px;
+    
+
+    
+}
+
+.botonTienda:hover {
+    background-image: black;
+
+}
+
+
 
 .footerTienda {
     height: 60px;
