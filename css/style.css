@@ -39,6 +39,7 @@ nav ul li a {
     background-color: #ffcc66;
     
     
+    
 
 }
 
@@ -146,6 +147,7 @@ nav ul li a:hover{
     
     
     
+    
 
 }
 
@@ -174,16 +176,56 @@ nav ul li a:hover{
     width: 50%;
     position: relative;
     left: 25%;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #ffcc66;
+    padding: 7px 7px 7px 7px;
+
     
     
 }
+
+input:focus {
+    height: 40px;
+}
+
+.bordeFormulario {
+   border: 7px black double;
+   
+}
+
+.boton1 {
+    background-image: linear-gradient(to right, 
+    #ffcc66,#db5d36);
+    border-radius: 10px;
+    padding: 9px 9px 9px 9px;
+    font-size: 14px;
+    color: white;
+    padding-top: 1px;
+    cursor: pointer;
+    
+}
+
+.boton1:hover {}
+
+.botonsubmitReset {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 25px;
+    
+}
+
+
+
 
 .contactoUno {
     color: black;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    background-color: red;
+    background-image: linear-gradient(to right, 
+    #ffcc66,#db5d36);
     
   
 }
@@ -206,7 +248,8 @@ nav ul li a:hover{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    background-color: red;
+    background-image: linear-gradient(to right, 
+    #ffcc66,#db5d36);
 }
 
 .imágenesMultimedia {
@@ -256,12 +299,14 @@ nav ul li a:hover{
 }
 
    /* Sección Biografía-historia */
-.biografíadebruceLee {
+
+   .biografíadebruceLee {
     color: black;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    background-color: red;
+    background-image: linear-gradient(to right, 
+    #ffcc66,#db5d36);
 }
 
 .parrafoBiografía {
@@ -293,7 +338,8 @@ nav ul li a:hover{
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    background-color: red;
+    background-image: linear-gradient(to right, 
+    #ffcc66,#db5d36);
 }
 
 .vinculoTienda {
