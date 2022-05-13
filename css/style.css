@@ -1,0 +1,378 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tapestry', cursive;
+}
+
+
+/* Header aplico flex (Sección Index) */
+
+nav {
+    background-image: url(../img/41piNkd+H7L._AC_.jpg);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    display: flex;
+    justify-content: end;
+    border-bottom: 2px black solid;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 10px;
+    background-color: #ffcc66;
+    height: 45px;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    background-color: #ffcc66;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+    background-color: #ffcc66;
+    
+    
+
+}
+
+nav ul li a:hover{
+    
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    
+} 
+
+
+   /*  Sección de imágenes, parrafo div main section Index */ 
+
+.imagenencabezadoPrincipal {
+    width: 100%;
+}
+
+.subtitulobruceLee {
+    background-color:red ;
+    display: inline-block;
+    color: black;
+    padding-left: 15px;
+
+    
+   
+}
+
+.padreencabezadoIndex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+}
+.parrafobruceLee {
+    color: black;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 15px;
+    
+    
+    
+   
+   
+}
+
+.imagenEncabezado1 {
+    width: 45%;
+    height: 70%;
+    border: 8px solid black;
+    padding: 7px 7px 7px 7px;
+    margin-top: 5px;
+    box-shadow: -8px 4px ;
+    
+   
+}
+
+
+.imagenEncabezado1:hover {
+    filter: grayscale(80%);
+
+}
+
+.imagendebruceLee2 {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    right: 0%;
+    bottom: 0%;
+    
+}
+
+.contenedorAsociate {
+   border: 3px #ffcc66 solid ;
+   border-radius: 2px;
+   width: 300px;
+   height: 150px;
+   padding: 15px;
+   text-align: center;
+   font-weight: bold;
+   margin-bottom: 30px;
+   position: relative;
+   left: 20%;
+   background-color: #ffcc66;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   box-shadow: 5px 5px 5px 5px;
+   max-width: 60%;
+}   
+
+
+.botonAsociate {
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 15px;
+    position: relative;
+    top: 15px;
+    box-shadow: 0 9px grey;
+    
+    
+    
+
+}
+
+.botonAsociate:hover {
+    border-radius: all 10px;
+    box-shadow: 0 5px grey;
+    transform: translateY(4px)
+}
+
+/* sección fotter Index */
+
+.footerIndex {
+    height: 60px;
+    padding-top: 45px;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: darkslategray;
+    box-shadow: 10px 10px 10px 15px;
+}
+
+/* Sección Contacto */
+
+.formularioContacto {
+    width: 50%;
+    position: relative;
+    left: 25%;
+    
+    
+}
+
+.contactoUno {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: red;
+    
+  
+}
+
+.footerFormulario  {
+    height: 60px;
+    padding-top: 45px;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: darkslategray;
+    box-shadow: 10px 10px 10px 15px;
+}
+
+   /* Sección Multimedia */
+
+.menúMultimedia {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: red;
+}
+
+.imágenesMultimedia {
+    display: flex;
+    align-content:center;
+    justify-content: space-between;
+    border: 15px black double;
+    background-color: #ffcc66;
+    
+}
+
+.imágenesTexto {
+    text-align: center;
+    
+}
+
+.videosTexto {
+    text-align: center;
+    
+
+
+}
+.videoMultimedia {
+    position: relative;
+    left: 27%;
+    margin-top: 30px;
+    max-width: 55%;
+    border: 15px black double;
+    padding: 7px 7px 7px 7px;
+    background-color: #ffcc66;
+    box-shadow: 3px -3px 3px 3px;
+
+   
+}
+
+
+
+.footerMultimedia {
+    height: 60px;
+    padding-top: 45px;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: darkslategray;
+    box-shadow: 10px 10px 10px 15px;
+}
+
+   /* Sección Biografía-historia */
+.biografíadebruceLee {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: red;
+}
+
+.parrafoBiografía {
+    color: black solid;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    width: 50%;
+    margin-left: 15px;
+}
+
+  
+
+.footerHistoria {
+    height: 60px;
+    padding-top: 45px;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: darkslategray;
+    box-shadow: 10px 10px 10px 15px;
+}
+
+    /* sección Tienda */
+
+.tiendaTítulo {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: red;
+}
+
+.vinculoTienda {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.footerTienda {
+    height: 60px;
+    padding-top: 45px;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: darkslategray;
+    box-shadow: 10px 10px 10px 15px;
+}
+
+     /*  Aplico GRID */
+
+     .bodyPrade {
+        display: grid;
+        grid-template-areas: 
+                            "header header header"
+                            "encabezado encabezado encabezado"
+                            "descripcionBruceLee descripcionBruceLee descripcionBruceLee"
+                            "imagenesIndex imagenesIndex imagenesIndex"
+                            "contenedorAsociate contenedorAsociate contenedorAsociate"
+                            "footer footer footer"
+    
+    }
+    
+    header {
+        grid-area: header;
+        
+    }
+    
+    .encabezado {
+        grid-area: encabezado;
+        
+    }
+    
+    .descripcionBruceLee {
+        grid-area: descripcionBruceLee;
+    }
+    
+    .imagenesIndex {
+        grid-area: imagenesIndex;
+    }
+    
+    .contenedorAsociate {
+        grid-area: contenedorAsociate;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+
+    /* Aplico Media MEDIA QUERIE */
+
+    @media screen and (max-width:1024px) {
+    }
+     .imágenesMultimedia {
+         flex-direction: column;
+         align-items: center;
+         gap: 50px;
+
+    }
+
+    .videoMultimedia {
+        position: relative;
+        left: 20%;
+        
+    }
+
+
+    
+    
+        
+    
+        
+    
