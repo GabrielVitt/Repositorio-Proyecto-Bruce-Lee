@@ -7,61 +7,55 @@
 }
 
 
-/* Header aplico flex (Sección Index) */
+/* Header aplico Boostrap menubar*/
 
-nav {
-    background-image: url(../img/41piNkd+H7L._AC_.jpg);
-    background-repeat: no-repeat;
-    background-size: 5%;
-    display: flex;
-    justify-content: end;
-    border-bottom: 2px black solid;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    padding-right: 10px;
-    background-color: #ffcc66;
-    height: 45px;
-
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 20px;
-    background-color: #ffcc66;
-
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 18px;
-    background-color: #ffcc66;
-    
+.navbar {
+    height: 81px;
+    margin-bottom: 10px;
+    box-shadow: red 5px 5px 5px 7px;
     
     
 
 }
 
-nav ul li a:hover{
+.nav-link {
+    color: white !important; 
+    font-size: 19.8px;
+    font-weight: 600;
+    cursor: pointer;
+
     
+}
+
+
+.nav-item:hover {
     background-color: black;
-    border-radius: 10px;
-    padding: 5px 5px 5px 5px;
+    border-radius: 20px 20px;
+    box-shadow: 0 5px grey;
+    transform: translateY(4px)
     
-} 
+
+    
+    
+
+    
+}
+
 
 
    /*  Sección de imágenes, parrafo div main section Index */ 
 
 .imagenencabezadoPrincipal {
     width: 100%;
+    padding-top: 4px;
 }
 
 .subtitulobruceLee {
-    background-color:red ;
+    background-color:red;
     display: inline-block;
     color: black;
+    font-size: 28px;
+    font-weight: 600;
     padding-left: 15px;
 
     
@@ -79,6 +73,8 @@ nav ul li a:hover{
     font-size: 18px;
     margin-left: 15px;
     margin-top: 15px;
+    font-weight: 600;
+    margin-right: 10px;
     
     
     
@@ -160,7 +156,6 @@ nav ul li a:hover{
 /* sección fotter Index */
 
 .footerIndex {
-    height: 60px;
     padding-top: 45px;
     border: 5px solid black;
     text-align: center;
@@ -177,12 +172,21 @@ nav ul li a:hover{
     position: relative;
     left: 25%;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     background-color: #ffcc66;
-    padding: 7px 7px 7px 7px;
+    
 
     
     
+}
+
+.textareaContacto {
+    
+}
+
+.inputFormulario{
+    width: 155px;
+    height: 20px;
 }
 
 input:focus {
@@ -191,6 +195,7 @@ input:focus {
 
 .bordeFormulario {
    border: 7px black double;
+   padding: 8px 8px 8px 8px;
    
 }
 
@@ -231,7 +236,7 @@ input:focus {
 }
 
 .footerFormulario  {
-    height: 60px;
+    
     padding-top: 45px;
     border: 5px solid black;
     text-align: center;
@@ -288,7 +293,7 @@ input:focus {
 
 
 .footerMultimedia {
-    height: 60px;
+   
     padding-top: 45px;
     border: 5px solid black;
     text-align: center;
@@ -316,12 +321,13 @@ input:focus {
     font-size: 17px;
     width: 50%;
     margin-left: 15px;
+    margin-top: 30px;
 }
 
   
 
 .footerHistoria {
-    height: 60px;
+    
     padding-top: 45px;
     border: 5px solid black;
     text-align: center;
@@ -378,7 +384,7 @@ input:focus {
 
 
 .footerTienda {
-    height: 60px;
+   
     padding-top: 45px;
     border: 5px solid black;
     text-align: center;
@@ -430,8 +436,33 @@ input:focus {
 
     /* Aplico Media MEDIA QUERIE */
 
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width: 994px) {
     }
+
+
+
+     
+    
+    
+
+    .parrafoBiografía {
+        text-align: center;
+        position: relative;
+        left: 25%;
+
+    }
+  
+    
+
+
+    .imágenesTexto {
+        padding-top: 15px;
+    }
+
+
+
+
+
      .imágenesMultimedia {
          flex-direction: column;
          align-items: center;
@@ -444,6 +475,19 @@ input:focus {
         left: 20%;
         
     }
+
+
+    .textareaContacto {
+        max-width: 150px;
+    }
+
+    .descripciónTienda {
+        padding-top: 15px;
+    }
+
+
+
+
 
 
     
