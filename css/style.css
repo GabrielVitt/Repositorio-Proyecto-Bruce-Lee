@@ -9,6 +9,15 @@
 
 /* Header aplico Boostrap menubar*/
 
+
+
+.bodypradeIndex {
+    background-image: linear-gradient(to right, 
+    #ffcc66,#dd8b0f);
+}
+
+
+
 .navbar {
     height: 81px;
     margin-bottom: 10px;
@@ -51,7 +60,8 @@
 }
 
 .subtitulobruceLee {
-    background-color:red;
+    background-image: linear-gradient(to right, 
+    #ffcc66,#db5d36);
     display: inline-block;
     color: black;
     font-size: 28px;
@@ -69,6 +79,7 @@
 
 }
 .parrafobruceLee {
+    
     color: black;
     font-size: 18px;
     margin-left: 15px;
@@ -258,23 +269,39 @@ input:focus {
     #ffcc66,#db5d36);
 }
 
-.imagenesMultimedia {
-    display: flex;
-    align-content:center;
-    justify-content: space-between;
-    border: 15px black double;
-    background-color: #ffcc66;
+.imagenesTexto {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    border: 6px double;
+    margin-top: 40px;
+    background-image: linear-gradient(to right, 
+    #ffcc66,#db5d36);
     
 }
 
-.imagenesTexto {
-    text-align: center;
+
+.carousel {
+    width: 70%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  
+   
     
 }
+
 
 .videosTexto {
     text-align: center;
-    
+    font-size: 24px;
+    font-weight: 600;
+    border: 6px double;
+    margin-top: 40px;
+    background-image: linear-gradient(to right, 
+    #ffcc66,#db5d36);
 
 
 }
@@ -306,7 +333,7 @@ input:focus {
 
    /* Sección Biografía-historia */
 
-   .biografiadebruceLee {
+.biografiadebruceLee {
     color: black;
     font-size: 30px;
     font-weight: bold;
@@ -315,7 +342,7 @@ input:focus {
     #ffcc66,#db5d36);
 }
 
-.parrafoBiografía {
+.parrafoBiografia {
     color: black solid;
     margin-top: 5px;
     font-weight: bold;
@@ -465,21 +492,7 @@ input:focus {
     
 
 
-    .imagenesTexto {
-        padding-top: 15px;
-    }
-
-
-
-
-
-     .imagenesMultimedia {
-         flex-direction: column;
-         align-items: center;
-         gap: 50px;
-
-    }
-
+    
     .videoMultimedia {
         position: relative;
         left: 20%;
@@ -495,10 +508,8 @@ input:focus {
         padding-top: 15px;
     }
 
-
-
+   
 }
-
 
 
 
