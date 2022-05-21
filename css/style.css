@@ -11,21 +11,24 @@
 
 
 
-.bodypradeIndex {
-    background-image: linear-gradient(to right, 
-    #ffcc66,#dd8b0f);
-}
-
 
 
 .navbar {
-    height: 81px;
-    margin-bottom: 10px;
-    box-shadow: black 5px 5px 5px 7px;
-    
-    
+   height: 100px;
+   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.733);
+   z-index: 1
+  
 
 }
+
+.imagennavBar {
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+
 
 .nav-link {
     color: white !important; 
@@ -34,6 +37,11 @@
     cursor: pointer;
 
     
+}
+
+
+.navbar-nav {
+    text-align: center;
 }
 
 
@@ -239,9 +247,8 @@ input:focus {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
-    
+    position: relative;
+    left: 35%;
   
 }
 
@@ -280,8 +287,8 @@ input:focus {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
+    position: relative;
+    left: 35%;
 }
 
 .imagenesTexto {
@@ -364,8 +371,9 @@ input:focus {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
+    position: relative;
+    left: 35%;
+    
 }
 
 .parrafoBiografia {
@@ -398,8 +406,9 @@ input:focus {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
+    position: relative;
+    left: 35%;
+
 }
 
 .descripcionTienda {
@@ -493,14 +502,6 @@ input:focus {
     @media screen and (max-width:992px) {
     
 
-    
-
-   .contenedorAsociate {
-       
-      
-   }
-
-
 
      
     .padreencabezadoIndex {
@@ -514,13 +515,12 @@ input:focus {
         text-align: center;
         position: relative;
         left: 25%;
+        margin-top: 20%;
         
 
     }
   
-   .carousel {
-       height: 10%;
-   }
+   
 
 
     
