@@ -1,563 +1,407 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Tapestry', cursive;
-}
+  margin: 0;
+  padding: 0;
+  font-family: 'Tapestry', cursive; }
 
-
+/*  Aplico variables de scss */
 /* Header aplico Boostrap menubar*/
-
-
-
-
-
 .navbar {
-   height: 100px;
-   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.733);
-   z-index: 1
-  
-
-}
+  height: 100px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.733);
+  z-index: 1; }
 
 .imagennavBar {
-    height: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-}
-
-
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px; }
 
 .nav-link {
-    color: white !important; 
-    font-size: 19.8px;
-    font-weight: 600;
-    cursor: pointer;
-
-    
-}
-
+  color: white !important;
+  font-size: 19.8px;
+  font-weight: 600;
+  cursor: pointer; }
 
 .navbar-nav {
-    text-align: center;
-}
-
+  text-align: center; }
 
 .nav-item:hover {
-    background-color: black;
-    border-radius: 20px 20px;
-    box-shadow: 0 5px grey;
-    transform: translateY(4px)
-    
+  background-color: black;
+  border-radius: 20px 20px;
+  box-shadow: 0 5px grey;
+  transform: translateY(4px); }
 
-    
-    
-
-    
-}
-
-
-
-   /*  Sección de imágenes, parrafo div main section Index */ 
-
+/*  Sección de imágenes, parrafo div main section Index */
 .imagenencabezadoPrincipal {
-    width: 100%;
-    padding-top: 4px;
-}
+  width: 100%;
+  padding-top: 4px; }
 
 .subtitulobruceLee {
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
-    display: inline-block;
-    color: black;
-    font-size: 28px;
-    font-weight: 600;
-    padding-left: 15px;
-
-    
-   
-}
+  background-image: linear-gradient(to right, #ffcc66, #db5d36);
+  display: inline-block;
+  color: black;
+  font-size: 28px;
+  font-weight: 600;
+  padding-left: 15px; }
 
 .padreencabezadoIndex {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center; }
 
-}
 .parrafobruceLee {
-    
-    color: black;
-    font-size: 18px;
-    margin-left: 15px;
-    margin-top: 15px;
-    font-weight: 600;
-    margin-right: 10px;
-    
-    
-    
-   
-   
-}
+  color: black;
+  font-size: 18px;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-weight: 600;
+  margin-right: 10px; }
 
 .imagenEncabezado1 {
-    width: 45%;
-    height: 70%;
-    border: 8px solid black;
-    padding: 7px 7px 7px 7px;
-    margin-top: 5px;
-    box-shadow: -8px 4px ;
-    
-   
-}
-
+  width: 45%;
+  height: 70%;
+  border: 8px solid black;
+  padding: 7px 7px 7px 7px;
+  margin-top: 5px;
+  box-shadow: -8px 4px; }
 
 .imagenEncabezado1:hover {
-    filter: grayscale(80%);
-
-}
+  filter: grayscale(80%); }
 
 .imagendebruceLee2 {
-    position: fixed;
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    right: 0%;
-    bottom: 0%;
-    
-}
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1; }
 
 .contenedorAsociate {
-   border: 3px #ffcc66 solid ;
-   border-radius: 2px;
-   width: 300px;
-   height: 150px;
-   padding: 15px;
-   text-align: center;
-   font-weight: bold;
-   margin-bottom: 30px;
-   position: relative;
-   left: 20%;
-   background-color: #ffcc66;
-   box-shadow: 5px 5px 5px 5px;
-   max-width: 77%;
-   
-   
-   
-}   
-
+  border: 3px #ffcc66 solid;
+  border-radius: 2px;
+  width: 300px;
+  height: 150px;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+  left: 20%;
+  background-color: #ffcc66;
+  box-shadow: 5px 5px 5px 5px;
+  max-width: 77%; }
 
 .botonAsociate {
-    text-decoration: none;
-    color: black;
-    background-color: yellow;
-    font-size: 16px;
-    padding: 5px;
-    border-radius: 15px;
-    box-shadow: 0 9px grey;
-    display: flex;
-    flex-direction: column;
-    
-    
-    
-    
-
-}
+  text-decoration: none;
+  color: black;
+  background-color: yellow;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0 9px grey;
+  display: flex;
+  flex-direction: column; }
 
 .botonAsociate:hover {
-    border-radius: all 10px;
-    box-shadow: 0 5px grey;
-    transform: translateY(4px)
-}
+  border-radius: all 10px;
+  box-shadow: 0 5px grey;
+  transform: translateY(4px); }
 
-/* sección fotter Index */
-
+/* sección fotter Index  Aplico SASS*/
 .footerIndex {
-    padding-top: 45px;
-    border: 5px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: darkslategray;
-    box-shadow: 10px 10px 10px 11px;
-}
+  padding-top: 45px;
+  border: 5px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: darkslategray;
+  box-shadow: 10px 10px 10px 11px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 15px; }
+  .footerIndex .logoInstragram {
+    width: 30px;
+    height: 30px; }
+  .footerIndex .logoFacebook {
+    width: 30px;
+    height: 30px; }
+  .footerIndex:hover {
+    filter: grayscale(70%); }
 
 /* Sección Contacto */
-
 .formularioContacto {
-    width: 60%;
-    position: relative;
-    left: 20px;
-    font-weight: bold;
-    font-size: 17px;
-    background-color: #ffcc66;
-    
-    
+  width: 60%;
+  position: relative;
+  left: 20px;
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #ffcc66; }
 
-    
-    
-}
-
-
-
-.inputFormulario{
-    width: 155px;
-    height: 20px;
-}
+.inputFormulario {
+  width: 155px;
+  height: 20px; }
 
 input:focus {
-    height: 40px;
-}
+  height: 40px; }
 
 .bordeFormulario {
-   border: 7px black double;
-   padding: 8px 8px 8px 8px;
-   
-}
+  border: 7px black double;
+  padding: 8px 8px 8px 8px; }
 
 .boton1 {
-    background-color: #db5d36;
-    border-radius: 10px;
-    padding: 9px 9px 9px 9px;
-    font-size: 14px;
-    color: white;
-    padding-top: 1px;
-    border: none;
-    cursor: pointer;
-    
-}
-
-
+  background-color: #db5d36;
+  border-radius: 10px;
+  padding: 9px 9px 9px 9px;
+  font-size: 14px;
+  color: white;
+  padding-top: 1px;
+  border: none;
+  cursor: pointer; }
 
 .botonsubmitReset {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    height: 25px;
-    
-    
-}
-
-
-
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 25px; }
 
 .contactoUno {
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    left: 35%;
-  
-}
-
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  left: 35%; }
 
 .form-floating {
-    white-space: pre;
-    
-    
-}
+  white-space: pre; }
 
 .form-control {
-    background-image: url(https://acimg.auctivacommerce.com/imgdata/0/2/0/4/2/7/webimg/7706602.jpg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: contain;
+  background-image: url(https://acimg.auctivacommerce.com/imgdata/0/2/0/4/2/7/webimg/7706602.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain; }
 
-}
+.footerFormulario {
+  padding-top: 45px;
+  border: 5px solid black;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: darkslategray;
+  box-shadow: 10px 10px 10px 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  gap: 15px; }
+  .footerFormulario .logofacebookFormulario {
+    width: 30px;
+    height: 30px; }
+  .footerFormulario .logoinstagramFormulario {
+    width: 30px;
+    height: 30px; }
+  .footerFormulario:hover {
+    filter: grayscale(70%); }
 
-
-
-.footerFormulario  {
-    
-    padding-top: 45px;
-    border: 5px solid black;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: darkslategray;
-    box-shadow: 10px 10px 10px 15px;
-}
-
-   /* Sección Multimedia */
-
+/* Sección Multimedia */
 .menuMultimedia {
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    left: 35%;
-}
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  left: 35%; }
 
 .imagenesTexto {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    border: 6px double;
-    margin-top: 40px;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
-    
-}
-
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  border: 6px double;
+  margin-top: 40px;
+  background-image: linear-gradient(to right, #ffcc66, #db5d36); }
 
 .carousel {
-    width: 95%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border: 10px black double;
-    padding: 20px 20px 20px 20px;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36); ;
-    
-    
-  
-   
-    
-}
+  width: 60%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 10px black double;
+  padding: 20px 20px 20px 20px;
+  background-image: linear-gradient(to right, #ffcc66, #db5d36); }
 
 .carousel:hover {
-    filter: invert(10%);
-}
-
-
+  filter: invert(10%); }
 
 .videosTexto {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    border: 6px double;
-    margin-top: 40px;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  border: 6px double;
+  margin-top: 40px;
+  background-image: linear-gradient(to right, #ffcc66, #db5d36); }
 
-
-}
 .videoMultimedia {
-    position: relative;
-    left: 27%;
-    margin-top: 30px;
-    max-width: 55%;
-    border: 15px black double;
-    padding: 7px 7px 7px 7px;
-    background-color: #ffcc66;
-    box-shadow: 3px -3px 3px 3px;
-
-   
-}
-
-
+  position: relative;
+  left: 27%;
+  margin-top: 30px;
+  max-width: 55%;
+  border: 15px black double;
+  padding: 7px 7px 7px 7px;
+  background-color: #ffcc66;
+  box-shadow: 3px -3px 3px 3px; }
 
 .footerMultimedia {
-   
-    padding-top: 45px;
-    border: 5px solid black;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: darkslategray;
-    box-shadow: 10px 10px 10px 15px;
-}
+  padding-top: 45px;
+  border: 5px solid black;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: darkslategray;
+  box-shadow: 10px 10px 10px 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  gap: 15px; }
+  .footerMultimedia .logofacebookMultimedia {
+    width: 30px;
+    height: 30px; }
+  .footerMultimedia .logoinstagramMultimedia {
+    width: 30px;
+    height: 30px; }
+  .footerMultimedia:hover {
+    filter: grayscale(70%); }
 
-   /* Sección Biografía-historia */
-
+/* Sección Biografía-historia */
 .biografiadebruceLee {
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    left: 35%;
-    
-}
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  left: 35%; }
 
 .parrafoBiografia {
-    color: black solid;
-    margin-top: 5px;
-    font-weight: bold;
-    font-size: 17px;
-    width: 50%;
-    margin-left: 15px;
-    margin-top: 30px;
-}
-
-  
+  color: black solid;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  width: 50%;
+  margin-left: 15px;
+  margin-top: 30px; }
 
 .footerHistoria {
-    
-    padding-top: 45px;
-    border: 5px solid black;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: darkslategray;
-    box-shadow: 10px 10px 10px 15px;
-}
+  padding-top: 45px;
+  border: 5px solid black;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: darkslategray;
+  box-shadow: 10px 10px 10px 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  gap: 15px; }
+  .footerHistoria .logofacebookHistoria {
+    width: 30px;
+    height: 30px; }
+  .footerHistoria .logoinstagramHistoria {
+    width: 30px;
+    height: 30px; }
+  .footerHistoria:hover {
+    filter: grayscale(70%); }
 
-    /* sección Tienda */
-
+/* sección Tienda */
 .tiendaTitulo {
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    left: 35%;
-
-}
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  left: 35%; }
 
 .descripcionTienda {
-    text-align: center;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
-    padding: 7px 7px 7px 7px;
-
-}
-
+  text-align: center;
+  background-image: linear-gradient(to right, #ffcc66, #db5d36);
+  padding: 7px 7px 7px 7px; }
 
 .vinculoTienda {
-    margin-top: 20px;
-    text-align: center;
-    
-    
-}
+  margin-top: 20px;
+  text-align: center; }
 
 .botonTienda {
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
-    font-weight: bold;
-    font-size: 20px;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
-    border-radius: 5px;
-    padding: 5px;
-    
-
-    
-}
-
-
-
-
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 20px;
+  background-image: linear-gradient(to right, #ffcc66, #db5d36);
+  border-radius: 5px;
+  padding: 5px; }
 
 .footerTienda {
-   
-    padding-top: 45px;
-    border: 5px solid black;
+  padding-top: 45px;
+  border: 5px solid black;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: darkslategray;
+  box-shadow: 10px 10px 10px 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  gap: 15px; }
+  .footerTienda .logoinstragramTienda {
+    width: 30px;
+    height: 30px; }
+  .footerTienda .logofacebookTienda {
+    width: 30px;
+    height: 30px; }
+  .footerTienda:hover {
+    filter: grayscale(70%); }
+
+/*  Aplico GRID */
+.bodyPrade {
+  display: grid;
+  grid-template-areas: "header header header" "encabezado encabezado encabezado" "descripcionBruceLee descripcionBruceLee descripcionBruceLee" "imagenesIndex imagenesIndex imagenesIndex" "contenedorAsociate contenedorAsociate contenedorAsociate" "footer footer footer"; }
+
+header {
+  grid-area: header; }
+
+.encabezado {
+  grid-area: encabezado; }
+
+.descripcionBruceLee {
+  grid-area: descripcionBruceLee; }
+
+.imagenesIndex {
+  grid-area: imagenesIndex; }
+
+.contenedorAsociate {
+  grid-area: contenedorAsociate; }
+
+footer {
+  grid-area: footer; }
+
+/* Aplico MEDIA QUERIE */
+@media screen and (max-width: 992px) {
+  .padreencabezadoIndex {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .parrafoBiografia {
     text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: darkslategray;
-    box-shadow: 10px 10px 10px 15px;
-}
-
-     /*  Aplico GRID */
-
-     .bodyPrade {
-        display: grid;
-        grid-template-areas: 
-                            "header header header"
-                            "encabezado encabezado encabezado"
-                            "descripcionBruceLee descripcionBruceLee descripcionBruceLee"
-                            "imagenesIndex imagenesIndex imagenesIndex"
-                            "contenedorAsociate contenedorAsociate contenedorAsociate"
-                            "footer footer footer"
-    
-    }
-    
-    header {
-        grid-area: header;
-        
-    }
-    
-    .encabezado {
-        grid-area: encabezado;
-        
-    }
-    
-    .descripcionBruceLee {
-        grid-area: descripcionBruceLee;
-    }
-    
-    .imagenesIndex {
-        grid-area: imagenesIndex;
-    }
-    
-    .contenedorAsociate {
-        grid-area: contenedorAsociate;
-    }
-    
-    footer {
-        grid-area: footer;
-    }
-
-    /* Aplico MEDIA QUERIE */
-
-    @media screen and (max-width:992px) {
-    
-
-
-     
-    .padreencabezadoIndex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-
-    .parrafoBiografia {
-        text-align: center;
-        position: relative;
-        left: 25%;
-        margin-top: 20%;
-        
-
-    }
-  
-   
-
-
-    
-    .videoMultimedia {
-        position: relative;
-        left: 20%;
-        
-    }
-    
-
-
-    .textareaContacto {
-        max-width: 150px;
-    }
-
-    .descripcionTienda {
-        padding-top: 15px;
-    }
-
-   
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-    
- 
-        
-        
-    
+    position: relative;
+    left: 25%;
+    margin-top: 20%; }
+  .videoMultimedia {
+    position: relative;
+    left: 20%; }
+  .textareaContacto {
+    max-width: 150px; }
+  .descripcionTienda {
+    padding-top: 15px; } }
