@@ -1,0 +1,25 @@
+.imagenespeliculasBruceLee {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    margin-bottom: 15px;
+    background-color: #ffcc66;
+    padding: 8px 8px 8px 8px;
+    
+    
+
+}
+
+.img1Pelicula {
+    width: 12%;
+    border: 10px black double;
+    padding: 5px;
+    
+    
+
+}
+.img2Pelicula, .img3Pelicula, .img4Pelicula {
+ @extend .img1Pelicula
+}
+

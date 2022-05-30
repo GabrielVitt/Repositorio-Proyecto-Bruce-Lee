@@ -5,11 +5,34 @@
   padding: 0;
   font-family: 'Tapestry', cursive; }
 
-/*  Aplico variables de scss */
+/*  Aplico variables,mixin,extend de scss */
+.imagenespeliculasBruceLee {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
+  margin-bottom: 15px;
+  background-color: #ffcc66;
+  padding: 8px 8px 8px 8px; }
+
+.img1Pelicula, .img2Pelicula, .img3Pelicula, .img4Pelicula {
+  width: 12%;
+  border: 10px black double;
+  padding: 5px; }
+
+.seccionpeliculasParrafo {
+  font-weight: 600;
+  margin-left: 15px; }
+
+.seccionpeliculasParrafo {
+  display: flex;
+  flex-direction: row;
+  gap: 15px; }
+
 /* Header aplico Boostrap menubar*/
 .navbar {
   height: 100px;
-  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.733);
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.733);
   z-index: 1; }
 
 .imagennavBar {
@@ -30,19 +53,20 @@
 .nav-item:hover {
   background-color: black;
   border-radius: 20px 20px;
-  box-shadow: 0 5px grey;
+  box-shadow: 0 4px grey;
   transform: translateY(4px); }
 
 /*  Sección de imágenes, parrafo div main section Index */
 .imagenencabezadoPrincipal {
   width: 100%;
-  padding-top: 4px; }
+  padding-top: 4px;
+  object-fit: cover; }
 
 .subtitulobruceLee {
   background-image: linear-gradient(to right, #ffcc66, #db5d36);
   display: inline-block;
   color: black;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
   padding-left: 15px; }
 
@@ -118,7 +142,7 @@
   font-size: 25px;
   font-weight: bold;
   background-color: darkslategray;
-  box-shadow: 10px 10px 10px 11px;
+  box-shadow: 5px 5px 5px 17px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -159,8 +183,7 @@ input:focus {
   font-size: 14px;
   color: white;
   padding-top: 1px;
-  border: none;
-  cursor: pointer; }
+  border: none; }
 
 .botonsubmitReset {
   display: flex;
@@ -187,12 +210,12 @@ input:focus {
 
 .footerFormulario {
   padding-top: 45px;
-  border: 5px solid black;
+  border: 3px solid black;
   text-align: center;
   font-size: 25px;
   font-weight: bold;
   background-color: darkslategray;
-  box-shadow: 10px 10px 10px 15px;
+  box-shadow: 5px 5px 5px 17px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -257,12 +280,12 @@ input:focus {
 
 .footerMultimedia {
   padding-top: 45px;
-  border: 5px solid black;
+  border: 3px solid black;
   text-align: center;
   font-size: 25px;
   font-weight: bold;
   background-color: darkslategray;
-  box-shadow: 10px 10px 10px 15px;
+  box-shadow: 5px 5px 5px 17px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -296,12 +319,12 @@ input:focus {
 
 .footerHistoria {
   padding-top: 45px;
-  border: 5px solid black;
+  border: 3px solid black;
   text-align: center;
   font-size: 25px;
   font-weight: bold;
   background-color: darkslategray;
-  box-shadow: 10px 10px 10px 15px;
+  box-shadow: 5px 5px 5px 17px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -345,12 +368,12 @@ input:focus {
 
 .footerTienda {
   padding-top: 45px;
-  border: 5px solid black;
+  border: 3px solid black;
   text-align: center;
   font-size: 25px;
   font-weight: bold;
   background-color: darkslategray;
-  box-shadow: 10px 10px 10px 15px;
+  box-shadow: 5px 5px 5px 18px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -404,4 +427,6 @@ footer {
   .textareaContacto {
     max-width: 150px; }
   .descripcionTienda {
-    padding-top: 15px; } }
+    padding-top: 15px; }
+  .imagenespeliculasBruceLee {
+    display: none; } }

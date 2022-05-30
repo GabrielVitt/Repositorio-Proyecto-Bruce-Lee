@@ -1,0 +1,7 @@
+
+.seccionpeliculasParrafo {
+    display: map-get($edicionpelicuas,grillas);
+    flex-direction: map-get($edicionpelicuas,direcciongrillas);
+    gap: map-get($edicionpelicuas,gapp);
+    
+}
