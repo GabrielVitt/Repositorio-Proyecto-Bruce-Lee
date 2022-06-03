@@ -41,14 +41,13 @@
   padding-bottom: 10px;
   padding-left: 5px; }
 
-.nav-link {
-  color: white !important;
-  font-size: 19.8px;
-  font-weight: 600;
-  cursor: pointer; }
-
 .navbar-nav {
   text-align: center; }
+  .navbar-nav .nav-link {
+    color: white !important;
+    font-size: 19.8px;
+    font-weight: 600;
+    cursor: pointer; }
 
 .nav-item:hover {
   background-color: black;
@@ -74,6 +73,15 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: center; }
+  .padreencabezadoIndex .imagenEncabezado1 {
+    width: 45%;
+    height: 70%;
+    border: 8px solid black;
+    padding: 7px 7px 7px 7px;
+    margin-top: 5px;
+    box-shadow: -8px 4px; }
+    .padreencabezadoIndex .imagenEncabezado1:hover {
+      filter: grayscale(80%); }
 
 .parrafobruceLee {
   color: black;
@@ -82,17 +90,6 @@
   margin-top: 15px;
   font-weight: 600;
   margin-right: 10px; }
-
-.imagenEncabezado1 {
-  width: 45%;
-  height: 70%;
-  border: 8px solid black;
-  padding: 7px 7px 7px 7px;
-  margin-top: 5px;
-  box-shadow: -8px 4px; }
-
-.imagenEncabezado1:hover {
-  filter: grayscale(80%); }
 
 .imagendebruceLee2 {
   position: fixed;
@@ -104,7 +101,6 @@
   z-index: 1; }
 
 .contenedorAsociate {
-  border: 3px #ffcc66 solid;
   border-radius: 2px;
   width: 300px;
   height: 150px;
@@ -114,25 +110,23 @@
   margin-bottom: 30px;
   position: relative;
   left: 20%;
-  background-color: #ffcc66;
+  background-image: linear-gradient(to right, #ffcc66, #db5d36);
   box-shadow: 5px 5px 5px 5px;
   max-width: 77%; }
-
-.botonAsociate {
-  text-decoration: none;
-  color: black;
-  background-color: yellow;
-  font-size: 16px;
-  padding: 5px;
-  border-radius: 15px;
-  box-shadow: 0 9px grey;
-  display: flex;
-  flex-direction: column; }
-
-.botonAsociate:hover {
-  border-radius: all 10px;
-  box-shadow: 0 5px grey;
-  transform: translateY(4px); }
+  .contenedorAsociate .botonAsociate {
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 9px grey;
+    display: flex;
+    flex-direction: column; }
+    .contenedorAsociate .botonAsociate .botonAsociate:hover {
+      border-radius: all 10px;
+      box-shadow: 0 5px grey;
+      transform: translateY(4px); }
 
 /* sección fotter Index  Aplico SASS*/
 .footerIndex {
@@ -142,7 +136,7 @@
   font-size: 25px;
   font-weight: bold;
   background-color: darkslategray;
-  box-shadow: 5px 5px 5px 17px;
+  box-shadow: 5px 5px 5px 11px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -157,20 +151,26 @@
     filter: grayscale(70%); }
 
 /* Sección Contacto */
-.formularioContacto {
-  width: 60%;
+.contactoUno {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
   position: relative;
-  left: 20px;
+  left: 35%; }
+
+.formularioContacto {
+  width: 40%;
+  position: relative;
+  left: 30%;
   font-weight: bold;
   font-size: 17px;
   background-color: #ffcc66; }
-
-.inputFormulario {
-  width: 155px;
-  height: 20px; }
-
-input:focus {
-  height: 40px; }
+  .formularioContacto .inputFormulario {
+    width: 155px;
+    height: 20px; }
+    .formularioContacto .inputFormulario:focus {
+      height: 40px; }
 
 .bordeFormulario {
   border: 7px black double;
@@ -191,31 +191,24 @@ input:focus {
   gap: 10px;
   height: 25px; }
 
-.contactoUno {
-  color: black;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  position: relative;
-  left: 35%; }
-
 .form-floating {
   white-space: pre; }
-
-.form-control {
-  background-image: url(https://acimg.auctivacommerce.com/imgdata/0/2/0/4/2/7/webimg/7706602.jpg);
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: contain; }
+  .form-floating .form-control {
+    background-image: url(https://acimg.auctivacommerce.com/imgdata/0/2/0/4/2/7/webimg/7706602.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    border: 2px solid #ffcc66; }
 
 .footerFormulario {
   padding-top: 45px;
+  padding-bottom: 35px;
   border: 3px solid black;
   text-align: center;
   font-size: 25px;
   font-weight: bold;
   background-color: darkslategray;
-  box-shadow: 5px 5px 5px 17px;
+  box-shadow: 5px 15px 5px 17px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -256,9 +249,8 @@ input:focus {
   border: 10px black double;
   padding: 20px 20px 20px 20px;
   background-image: linear-gradient(to right, #ffcc66, #db5d36); }
-
-.carousel:hover {
-  filter: invert(10%); }
+  .carousel:hover {
+    filter: invert(10%); }
 
 .videosTexto {
   text-align: center;
@@ -280,12 +272,13 @@ input:focus {
 
 .footerMultimedia {
   padding-top: 45px;
+  padding-bottom: 35px;
   border: 3px solid black;
   text-align: center;
   font-size: 25px;
   font-weight: bold;
   background-color: darkslategray;
-  box-shadow: 5px 5px 5px 17px;
+  box-shadow: 5px 15px 5px 17px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -319,12 +312,13 @@ input:focus {
 
 .footerHistoria {
   padding-top: 45px;
+  padding-bottom: 35px;
   border: 3px solid black;
   text-align: center;
   font-size: 25px;
   font-weight: bold;
   background-color: darkslategray;
-  box-shadow: 5px 5px 5px 17px;
+  box-shadow: 5px 15px 5px 17px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
@@ -354,38 +348,48 @@ input:focus {
 
 .vinculoTienda {
   margin-top: 20px;
-  text-align: center; }
-
-.botonTienda {
-  color: white;
-  text-decoration: none;
-  list-style-type: none;
-  font-weight: bold;
-  font-size: 20px;
-  background-image: linear-gradient(to right, #ffcc66, #db5d36);
-  border-radius: 5px;
-  padding: 5px; }
-
-.footerTienda {
-  padding-top: 45px;
-  border: 3px solid black;
   text-align: center;
-  font-size: 25px;
-  font-weight: bold;
-  background-color: darkslategray;
-  box-shadow: 5px 5px 5px 18px;
+  margin-bottom: 80%; }
+  .vinculoTienda .botonTienda {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #ffcc66, #db5d36);
+    border-radius: 5px;
+    padding: 5px; }
+    .vinculoTienda .botonTienda:hover {
+      background-color: black;
+      border-radius: 20px 20px;
+      box-shadow: 0 4px grey;
+      transform: translateY(4px); }
+
+.footertiendaPadre {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  gap: 15px; }
-  .footerTienda .logoinstragramTienda {
-    width: 30px;
-    height: 30px; }
-  .footerTienda .logofacebookTienda {
-    width: 30px;
-    height: 30px; }
-  .footerTienda:hover {
-    filter: grayscale(70%); }
+  flex-direction: column;
+  align-content: flex-end; }
+  .footertiendaPadre .footerTienda {
+    padding-top: 45px;
+    padding-bottom: 35px;
+    border: 3px solid black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: darkslategray;
+    box-shadow: 5px 15px 5px 17px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    gap: 15px; }
+    .footertiendaPadre .footerTienda .logoinstragramTienda {
+      width: 30px;
+      height: 30px; }
+    .footertiendaPadre .footerTienda .logofacebookTienda {
+      width: 30px;
+      height: 30px; }
+    .footertiendaPadre .footerTienda:hover {
+      filter: grayscale(70%); }
 
 /*  Aplico GRID */
 .bodyPrade {
@@ -416,11 +420,13 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .parrafoBiografia {
-    text-align: center;
-    position: relative;
-    left: 25%;
-    margin-top: 20%; }
+    .padreencabezadoIndex .parrafoBiografia {
+      text-align: center;
+      position: relative;
+      left: 25%;
+      margin-top: 20%; }
+  .formularioContacto {
+    width: 60%; }
   .videoMultimedia {
     position: relative;
     left: 20%; }

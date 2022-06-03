@@ -26,6 +26,7 @@
    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.733);
    z-index: 1
    
+   
   
 
 }
@@ -39,26 +40,31 @@
 
 
 
-.nav-link {
-    color: white !important; 
-    font-size: 19.8px;
-    font-weight: 600;
-    cursor: pointer;
-
-    
-}
-
-
 .navbar-nav {
     text-align: center;
+    .nav-link {
+        color: white !important; 
+        font-size: 19.8px;
+        font-weight: 600;
+        cursor: pointer;
+        
+    
+        
+    }
 }
 
 
-.nav-item:hover {
+
+
+
+.nav-item {
+    &:hover {
     background-color: black;
     border-radius: 20px 20px;
     box-shadow: 0 4px grey;
     transform: translateY(4px)
+    }
+    
     
 
     
@@ -78,8 +84,7 @@
 }
 
 .subtitulobruceLee {
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
+    background-image: $color-de-fondo;
     display: inline-block;
     color: black;
     font-size: 26px;
@@ -95,8 +100,25 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    .imagenEncabezado1 {
+        width: 45%;
+        height: 70%;
+        border: 8px solid black;
+        padding: 7px 7px 7px 7px;
+        margin-top: 5px;
+        box-shadow: -8px 4px ;
+
+        &:hover {
+            filter: grayscale(80%);
+        }
+        
+        
+       
+    }
+    
 
 }
+
 .parrafobruceLee {
     
     color: black;
@@ -112,22 +134,12 @@
    
 }
 
-.imagenEncabezado1 {
-    width: 45%;
-    height: 70%;
-    border: 8px solid black;
-    padding: 7px 7px 7px 7px;
-    margin-top: 5px;
-    box-shadow: -8px 4px ;
-    
-   
-}
 
 
-.imagenEncabezado1:hover {
-    filter: grayscale(80%);
 
-}
+
+
+
 
 .imagendebruceLee2 {
     position: fixed;
@@ -143,7 +155,6 @@
   
 
 .contenedorAsociate {
-   border: 3px $color-de-fondodos solid ;
    border-radius: 2px;
    width: 300px;
    height: 150px;
@@ -153,16 +164,10 @@
    margin-bottom: 30px;
    position: relative;
    left: 20%;
-   background-color: $color-de-fondodos;
+   background-image: $color-de-fondo;
    box-shadow: 5px 5px 5px 5px;
    max-width: 77%;
-   
-   
-   
-}   
-
-
-.botonAsociate {
+   .botonAsociate {
     text-decoration: none;
     color: black;
     background-color: yellow;
@@ -172,18 +177,25 @@
     box-shadow: 0 9px grey;
     display: flex;
     flex-direction: column;
+    .botonAsociate:hover {
+        border-radius: all 10px;
+        box-shadow: 0 5px grey;
+        transform: translateY(4px)
+    }
     
     
     
     
 
 }
+   
+   
+   
+}   
 
-.botonAsociate:hover {
-    border-radius: all 10px;
-    box-shadow: 0 5px grey;
-    transform: translateY(4px)
-}
+
+
+
 
 
 
@@ -197,7 +209,7 @@
     font-size: 25px;
     font-weight: bold;
     background-color: darkslategray;
-    box-shadow: 5px 5px 5px 17px;
+    box-shadow: 5px 5px 5px 11px;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -230,62 +242,6 @@
 
 /* Sección Contacto */
 
-.formularioContacto {
-    width: 60%;
-    position: relative;
-    left: 20px;
-    font-weight: bold;
-    font-size: 17px;
-    background-color: $color-de-fondodos;
-    
-    
-
-    
-    
-}
-
-
-
-.inputFormulario{
-    width: 155px;
-    height: 20px;
-}
-
-input:focus {
-    height: 40px;
-}
-
-.bordeFormulario {
-   border: 7px black double;
-   padding: 8px 8px 8px 8px;
-   
-}
-
-.boton1 {
-    background-color: #db5d36;
-    border-radius: 10px;
-    padding: 9px 9px 9px 9px;
-    font-size: 14px;
-    color: white;
-    padding-top: 1px;
-    border: none;
-    
-    
-}
-
-
-
-.botonsubmitReset {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    height: 25px;
-    
-    
-}
-
-
-
 
 .contactoUno {
     color: black;
@@ -298,31 +254,103 @@ input:focus {
 }
 
 
+
+
+
+
+.formularioContacto {
+    width: 40%;
+    position: relative;
+    left: 30%;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: $color-de-fondodos;
+    .inputFormulario{
+        width: 155px;
+        height: 20px;
+        &:focus {
+            height: 40px;
+            
+        }
+    }
+    
+    
+
+    
+    
+}
+
+.bordeFormulario {
+    border: 7px black double;
+    padding: 8px 8px 8px 8px;
+    
+ }
+ 
+ .boton1 {
+     background-color: #db5d36;
+     border-radius: 10px;
+     padding: 9px 9px 9px 9px;
+     font-size: 14px;
+     color: white;
+     padding-top: 1px;
+     border: none;
+     
+     
+ }
+ 
+ 
+ 
+ .botonsubmitReset {
+     display: flex;
+     justify-content: center;
+     gap: 10px;
+     height: 25px;
+     
+     
+ }
+
+
+
+
+
+
+ 
+
 .form-floating {
     white-space: pre;
+
+
+    .form-control {
+        background-image: url(https://acimg.auctivacommerce.com/imgdata/0/2/0/4/2/7/webimg/7706602.jpg);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: contain;
+        border: 2px solid $color-de-fondodos;
+
+    
+        
+       
+        
+    
+    }
     
     
 }
 
-.form-control {
-    background-image: url(https://acimg.auctivacommerce.com/imgdata/0/2/0/4/2/7/webimg/7706602.jpg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: contain;
 
-}
 
 
 
 .footerFormulario  {
     
     padding-top: 45px;
+    padding-bottom: 35px;
     border: 3px solid black;
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     background-color: darkslategray;
-    box-shadow: 5px 5px 5px 17px;
+    box-shadow: 5px 15px 5px 17px;
     display: flex;
     flex-direction: $flex-rowreverse;
     justify-content:space-evenly;
@@ -358,8 +386,7 @@ input:focus {
     font-weight: 600;
     border: 6px double;
     margin-top: 40px;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
+    background-image: $color-de-fondo;
     
 }
 
@@ -373,8 +400,11 @@ input:focus {
     margin: auto;
     border: 10px black double;
     padding: 20px 20px 20px 20px;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36); ;
+    background-image: $color-de-fondo; 
+    &:hover {
+        filter: invert(10%);
+    }
+
     
     
   
@@ -382,9 +412,7 @@ input:focus {
     
 }
 
-.carousel:hover {
-    filter: invert(10%);
-}
+
 
 
 
@@ -394,11 +422,12 @@ input:focus {
     font-weight: 600;
     border: 6px double;
     margin-top: 40px;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
+    background-image: $color-de-fondo;
 
 
 }
+
+
 .videoMultimedia {
     position: relative;
     left: 27%;
@@ -414,15 +443,17 @@ input:focus {
 
 
 
+
 .footerMultimedia {
    
     padding-top: 45px;
+    padding-bottom: 35px;
     border: 3px solid black;
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     background-color: darkslategray;
-    box-shadow: 5px 5px 5px 17px;
+    box-shadow: 5px 15px 5px 17px;
     display: flex;
     flex-direction: $flex-rowreverse;
     justify-content:space-evenly;
@@ -468,12 +499,13 @@ input:focus {
 .footerHistoria {
     
     padding-top: 45px;
+    padding-bottom: 35px;
     border: 3px solid black;
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     background-color: darkslategray;
-    box-shadow: 5px 5px 5px 17px;
+    box-shadow: 5px 15px 5px 17px;
     display: flex;
     flex-direction: $flex-rowreverse;
     justify-content:space-evenly;
@@ -505,61 +537,75 @@ input:focus {
 
 .descripcionTienda {
     text-align: center;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
+    background-image: $color-de-fondo;
     padding: 7px 7px 7px 7px;
+    
 
 }
-
 
 .vinculoTienda {
     margin-top: 20px;
     text-align: center;
+    margin-bottom: 80%;
+    .botonTienda {
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
+        font-weight: bold;
+        font-size: 20px;
+        background-image: $color-de-fondo;
+        border-radius: 5px;
+        padding: 5px;
+        &:hover {
+            background-color: black;
+            border-radius: 20px 20px;
+            box-shadow: 0 4px grey;
+            transform: translateY(4px)
+            }
+        
+    
+        
+    }
     
     
 }
 
-.botonTienda {
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
-    font-weight: bold;
-    font-size: 20px;
-    background-image: linear-gradient(to right, 
-    #ffcc66,#db5d36);
-    border-radius: 5px;
-    padding: 5px;
-    
-
-    
-}
 
 
 
 
-.footerTienda {
-    padding-top: 45px;
-    border: 3px solid black;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: darkslategray;
-    box-shadow: 5px 5px 5px 18px;
+
+
+.footertiendaPadre {
     display: flex;
-    flex-direction: $flex-rowreverse;
-    justify-content:space-evenly;
-    gap: 15px;
-    .logoinstragramTienda {
-        width: 30px;
-        height: 30px;
+    flex-direction: column;
+    align-content: flex-end;
+    .footerTienda {
+        padding-top: 45px;
+        padding-bottom: 35px;
+        border: 3px solid black;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        background-color: darkslategray;
+        box-shadow: 5px 15px 5px 17px;
+        display: flex;
+        flex-direction: $flex-rowreverse;
+        justify-content:space-evenly;
+        gap: 15px;
+        .logoinstragramTienda {
+            width: 30px;
+            height: 30px;
+        }
+        .logofacebookTienda {
+            width: 30px;
+            height: 30px;
+        }
+        &:hover {
+            filter: grayscale(70%);
+        }
     }
-    .logofacebookTienda {
-        width: 30px;
-        height: 30px;
-    }
-    &:hover {
-        filter: grayscale(70%);
-    }
+    
 }
 
      /*  Aplico GRID */
@@ -573,6 +619,7 @@ input:focus {
                             "imagenesIndex imagenesIndex imagenesIndex"
                             "contenedorAsociate contenedorAsociate contenedorAsociate"
                             "footer footer footer"
+                            
     
     }
     
@@ -602,6 +649,8 @@ input:focus {
         grid-area: footer;
     }
 
+    
+
     /* Aplico MEDIA QUERIE */
 
     @media screen and (max-width:992px) {
@@ -613,16 +662,20 @@ input:focus {
         display: flex;
         flex-direction: column;
         align-items: center;
+        .parrafoBiografia {
+            text-align: center;
+            position: relative;
+            left: 25%;
+            margin-top: 20%;
+            
+    
+        }
     }
     
 
-    .parrafoBiografia {
-        text-align: center;
-        position: relative;
-        left: 25%;
-        margin-top: 20%;
+    .formularioContacto {
+        width: 60%;
         
-
     }
   
    
