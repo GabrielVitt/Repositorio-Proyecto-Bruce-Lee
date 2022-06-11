@@ -17,17 +17,9 @@
 
 /* Header aplico Boostrap menubar*/
 
-
-
-
-
 .navbar {
-   height: 100px;
-   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.733);
-   z-index: 1
-   
-   
-  
+   display: flex;
+   flex-wrap: nowrap;
 
 }
 
@@ -38,63 +30,56 @@
     padding-left: 5px;
 }
 
-
-
 .navbar-nav {
     text-align: center;
     .nav-link {
-        color: white !important; 
+        color: black !important; 
         font-size: 19.8px;
         font-weight: 600;
         cursor: pointer;
         
-    
-        
     }
 }
-
-
-
-
 
 .nav-item {
     &:hover {
-    background-color: black;
+    background-color: yellow ;
     border-radius: 20px 20px;
-    box-shadow: 0 4px grey;
+    box-shadow: 0 4px rgb(250, 3, 3);
     transform: translateY(4px)
     }
     
-    
-
-    
-    
-
-    
 }
-
-
 
    /*  Sección de imágenes, parrafo div main section Index */ 
 
 .imagenencabezadoPrincipal {
     width: 100%;
-    padding-top: 4px;
     object-fit: cover;
 }
 
-.subtitulobruceLee {
+.padrepresentacioonbruceLee{
     background-image: $color-de-fondo;
-    display: inline-block;
-    color: black;
-    font-size: 26px;
-    font-weight: 600;
-    padding-left: 15px;
-   
-
-    
-   
+    .bienvenidoTexto {
+        font-weight: bold;
+        display: inline-block;
+        color: black;
+        font-size: 26px;
+        font-weight: 600;
+        padding-left: 15px;
+        color: red;
+    }
+    .subtitulobruceLee {
+        display: inline-block;
+        color: black;
+        font-size: 21px;
+        font-weight: 100;
+        padding-left: 15px;
+    }
 }
+
+
+
 
 .padreencabezadoIndex {
     display: flex;
@@ -112,34 +97,19 @@
             filter: grayscale(80%);
         }
         
-        
-       
     }
-    
-
 }
+
 
 .parrafobruceLee {
-    
     color: black;
-    font-size: 18px;
+    font-size: 17px;
     margin-left: 15px;
     margin-top: 15px;
-    font-weight: 600;
+    font-weight: bold;
     margin-right: 10px;
-    
-    
-    
-   
-   
+
 }
-
-
-
-
-
-
-
 
 .imagendebruceLee2 {
     position: fixed;
@@ -151,8 +121,6 @@
     z-index: 1;
     
 }
-
-  
 
 .contenedorAsociate {
    border-radius: 2px;
@@ -182,22 +150,14 @@
         box-shadow: 0 5px grey;
         transform: translateY(4px)
     }
-    
-    
-    
-    
 
 }
    
-   
-   
 }   
 
-
-
-
-
-
+.peliculasH2 {
+    color: red;
+}
 
 
 /* sección fotter Index  Aplico SASS*/
@@ -227,17 +187,7 @@
         filter: grayscale(70%);
     }
       
-     
-
 }
-
-
-    
-
-
-
-
-
 
 
 /* Sección Contacto */
@@ -252,11 +202,6 @@
     left: 35%;
   
 }
-
-
-
-
-
 
 .formularioContacto {
     width: 40%;
@@ -273,10 +218,6 @@
             
         }
     }
-    
-    
-
-    
     
 }
 
@@ -295,26 +236,15 @@
      padding-top: 1px;
      border: none;
      
-     
- }
+}
  
- 
- 
- .botonsubmitReset {
+.botonsubmitReset {
      display: flex;
      justify-content: center;
      gap: 10px;
      height: 25px;
      
-     
- }
-
-
-
-
-
-
- 
+}
 
 .form-floating {
     white-space: pre;
@@ -327,19 +257,9 @@
         background-size: contain;
         border: 2px solid $color-de-fondodos;
 
-    
-        
-       
-        
-    
     }
     
-    
 }
-
-
-
-
 
 .footerFormulario  {
     
@@ -390,7 +310,6 @@
     
 }
 
-
 .carousel {
     width: 60%;
     top: 0;
@@ -405,16 +324,7 @@
         filter: invert(10%);
     }
 
-    
-    
-  
-   
-    
 }
-
-
-
-
 
 .videosTexto {
     text-align: center;
@@ -427,7 +337,6 @@
 
 }
 
-
 .videoMultimedia {
     position: relative;
     left: 27%;
@@ -438,11 +347,7 @@
     background-color: $color-de-fondodos;
     box-shadow: 3px -3px 3px 3px;
 
-   
 }
-
-
-
 
 .footerMultimedia {
    
@@ -485,16 +390,41 @@
 }
 
 .parrafoBiografia {
-    color: black solid;
     margin-top: 5px;
-    font-weight: bold;
     font-size: 17px;
     width: 50%;
     margin-left: 15px;
     margin-top: 30px;
+    font-weight: bolder ;
+    padding-left: 8px;
+    padding-right: 8px;
+    .bruceleeBio {
+        text-transform: uppercase;
+    }
+    .jeetkuneDoo {
+        text-transform: uppercase;
+    }
+    .imagenlibrobruceLee {
+        position: absolute;
+        top: 60%;
+        left: 60%;
+        transition: all 1s;
+        &:hover {
+            width: 300px;
+        }
+    }
+    .imagenlibrojeetkuneDo {
+        position: absolute;
+        width: 30%;
+        top: 165%;
+        left: 59%;
+        transition: all 2s;
+        &:hover {
+           width: 100px;
+        }
+    }
+    
 }
-
-  
 
 .footerHistoria {
     
@@ -523,7 +453,7 @@
     }
 }
 
-    /* sección Tienda */
+    /* Sección Tienda */
 
 .tiendaTitulo {
     color: black;
@@ -538,15 +468,14 @@
 .descripcionTienda {
     text-align: center;
     background-image: $color-de-fondo;
-    padding: 7px 7px 7px 7px;
+    padding: 7x 7px 7px 7px;
+    font-size: 28px;
     
-
 }
 
 .vinculoTienda {
     margin-top: 20px;
     text-align: center;
-    margin-bottom: 80%;
     .botonTienda {
         color: white;
         text-decoration: none;
@@ -554,7 +483,7 @@
         font-weight: bold;
         font-size: 20px;
         background-image: $color-de-fondo;
-        border-radius: 5px;
+        border-radius: 20px 20px;
         padding: 5px;
         &:hover {
             background-color: black;
@@ -562,19 +491,48 @@
             box-shadow: 0 4px grey;
             transform: translateY(4px)
             }
-        
     
-        
     }
     
-    
 }
-
-
-
-
-
-
+.carritotiendaPadre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10%;
+    margin-bottom: 30%;
+    
+    .imagenescarrito {
+        border: 2px black solid;
+        margin: 4px 4px 4px 4px;
+        height: 200px;
+        &:hover {
+            filter:opacity(50%);
+            
+            
+        }
+        
+    }
+    h3 {
+        position: relative;
+        left: 23%;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        width: 35%;
+        background-image: $color-de-fondo;
+        border-radius: 20px 20px;
+        padding: 5px 5px 5px 5px;
+        &:hover {
+            background-color: black;
+            border-radius: 20px 20px;
+            box-shadow: 0 4px grey;
+            transform: translateY(6px)
+            }
+    }
+}
 
 .footertiendaPadre {
     display: flex;
@@ -662,34 +620,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        .parrafoBiografia {
-            text-align: center;
-            position: relative;
-            left: 25%;
-            margin-top: 20%;
-            
-    
-        }
+        
     }
     
-
-    .formularioContacto {
+   .formularioContacto {
         width: 60%;
         
     }
   
-   
-
-
-    
-    .videoMultimedia {
+   .videoMultimedia {
         position: relative;
         left: 20%;
         
     }
     
-
-
     .textareaContacto {
         max-width: 150px;
     }
@@ -698,11 +642,60 @@
         padding-top: 15px;
     }
 
-
     .imagenespeliculasBruceLee {
         display: none;
         
     }
 
+    .tiendaTitulo {
+        position: absolute;
+        right: 40%;
+        bottom: 61%;
+       
+
+    }
+
+    .menuMultimedia {
+        position: absolute;
+        right: 40%;
+        bottom: 61%;
+        
+
+    }
+
+    .biografiadebruceLee {
+        position: absolute;
+        right: 40%;
+        bottom: 61%;
+        
+    }
+
+    .contactoUno {
+        position: absolute;
+        right: 40%;
+        bottom: 61%;
+    }
+    .carritotiendaPadre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 230px;
+        margin-bottom: 250px;
+        margin-left: 25%;
+        .imagenescarrito {
+            width: 70%;
+            
+        }
+       
+    }
    
+    #seccionHistoria {
+        display: none;
+    }
+    .parrafoBiografia1 {
+      width: 200%;
+      
+    }
+        
 }
